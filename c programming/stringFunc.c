@@ -23,6 +23,11 @@ s or ss ==> th
 lowercase
 
 
+minimum ==> 5 hours
+
+projects@neosphere.com.np-
+
+
 
 
 
