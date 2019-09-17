@@ -1,0 +1,16 @@
+This is a house
+Hellothis is a very long non-uniform string
+
+hello
+everyone
+this 
+is 
+an example
+of File Handling
+`water
+`cvnvcksmvksdv
+vmnxnvsdnvsdf
+xcvnnlkxcnvx
+xcnvlxcknv
+cnvlkxnc
+'`
