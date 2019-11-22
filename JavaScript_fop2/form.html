@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form validation</title>
+</head>
+<body>
+    <form>
+       username: <input type="text">
+       <br><br>
+       password: <input type="password" id="pwd">
+       <span></span>
+        <br><br>
+       <button type="button" onclick="viewPass();" id="b1"> view </button>
+       
+       <button type="button" onclick="myCheck();"> Submit </button>
+    </form>
+
+    <script>
+        function viewPass()
+        {
+            var x = document.getElementById('b1').innerHTML;
+            if(x == 'view')
+            {
+                document.getElementById('b1').innerHTML = 'hide';
+                document.querySelector('#pwd').type = 'text';
+            }
+            else{
+                document.getElementById('b1').innerHTML = 'view';
+                document.querySelector('#pwd').type = 'password';
+            }
+        }
+        function myCheck()
+        {
+            var pwd = document.getElementById('pwd').value;
+            var patt = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;              // (^.{4,6}$) ==> minimum 4 , max 6
+            var res = patt.test(pwd);
+            if(res)
+            {
+                document.querySelector('span').innerHTML = 'valid';
+                document.querySelector('span').style.color = 'green';
+            }
+            else{
+                document.querySelector('span').innerHTML = 'invalid';
+                document.querySelector('span').style.color = 'red';
+            }
+        }
+    </script>
+
+</body>
+</html>

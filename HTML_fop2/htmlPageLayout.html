@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            line-height: 1.4;
+        }
+        #header {
+            margin-bottom: 15px;
+            background: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        #sidebar {
+            width: 29%;
+            float: right;
+        }
+        .card {
+            border: 1px solid #ddd;
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+        ul{
+          
+            list-style-type: none;
+            padding : 0;
+        }
+
+        #footer{
+            clear:both;
+            background-color: #333;
+            color: #fff;
+            padding:10px;
+        }
+
+        .text-center {
+            display:block;
+            text-align:center;
+            text-decoration: none;
+        }
+
+        #main{
+            width:69%;
+            float:left;
+        }
+
+    </style>
+</head>
+<body>
+        <header id="header">
+            <h1>My Website</h1>
+            <p>Just Another Website</p>
+        </header>
+
+        <aside id="sidebar" class="card">
+            <h3>Navigation</h3>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <h3>Contact US</h3>
+            <ul>
+                <li><strong>Address:</strong> 50 Main st, Boston MA</li>
+                <li><strong>Phone:</strong> (555) 555-5555</li>
+                <li><strong>Email:</strong>me@somethingcool.com</li>
+            </ul>
+
+        </aside>
+
+        <main id="main">
+            <section class="card">
+                <h2>Welcome to our website</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Unde quaerat ad dolorem dolorum earum obcaecati ex? 
+                    Harum reiciendis facilis quasi amet aliquam natus doloribus, 
+                    soluta, deleniti, nobis ullam eum. Totam.
+                </p>
+                <a href="#" class="text-center">Click for more</a>
+            </section>
+            <section>
+                <article>
+                    <h3>Article one</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Unde quaerat ad dolorem dolorum earum obcaecati ex? 
+                        Harum reiciendis facilis quasi amet aliquam natus doloribus, 
+                        soluta, deleniti, nobis ullam eum. Totam.
+                    </p>
+                </article>
+                <article>
+                    <h3>Article two</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Unde quaerat ad dolorem dolorum earum obcaecati ex? 
+                        Harum reiciendis facilis quasi amet aliquam natus doloribus, 
+                        soluta, deleniti, nobis ullam eum. Totam.
+                    </p>
+                </article>
+            </section>
+        </main>
+
+
+
+
+
+        <footer id="footer">
+            <p class="text-center">Copyright &copy; My Website 2019</p>
+        </footer>
+    
+</body>
+</html>

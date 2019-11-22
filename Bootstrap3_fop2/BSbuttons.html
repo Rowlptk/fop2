@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Buttons</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <button type="button" class="btn btn-danger disabled">Button 1</button>
+    <!-- btn-default, btn-primary, btn-success 
+    btn-info, btn-warning, btn-link, btn-danger
+    -->
+
+    <a href="#" class="btn btn-danger btn-md active">Google</a>
+
+    <!-- btn-lg, btn-md, btn-sm, btn-xs -->
+
+    <input type="submit" value="submit" class="btn btn-success">
+
+    <button class="btn btn-warning btn-block">Block Button</button>
+
+    <div class="btn-group btn-group-lg">
+        <button class="btn btn-primary">Button 1</button>
+        <button class="btn btn-danger">Button 2</button>
+        <div class="btn-group btn-group-lg">        
+            <button class="btn btn-success dropdown-toggle"
+            data-toggle="dropdown">Button 3
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#"> sub button 1 </a></li>
+                <li><a href="#"> sub button 2 </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <button class="btn btn-success">
+        <span class="glyphicon glyphicon-envelope">
+        </span>
+    </button>
+
+    <button class="btn btn-success">
+        <span class="glyphicon glyphicon-search">
+        </span>
+    </button>
+
+    <!-- 260 glyphicons , 
+        
+        font-awesome ==> CDN
+        google material icon ==> CDN
+
+        code copy icon ko ==>  html page ma halne
+    -->
+
+    <!-- Badges and labels -->
+
+    <a href="#">Inbox <span class="badge">5</span></a>
+
+    <a href="#">messages <span class="label label-default">new</span></a>
+
+<!-- label-default, primary, success, info, warning, danger -->
+
+
+
+
+
+
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>        
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 onclick="demo();">Click Me!</h1>
+
+
+    <script src="external.js"></script> -->
+
+    <input type="text" id="inp" placeholder="enter number expression">
+    <button onclick="result();"> = </button>
+
+
+    <!-- mouse event 
+    onclick
+    ondblclick
+    onmouserover
+    onmouseenter
+    onmousewheel
+    onmouseout
+    onmousleave
+    -->
+
+        <script>
+            function result(){
+                var expression = document.getElementById('inp').value;
+                var result = eval(expression);
+                document.getElementById('inp').value = result;
+            }
+        </script>
+</body>
+</html>

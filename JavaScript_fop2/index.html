@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo Js</title>
+</head>
+<body>
+    <p onclick="this.innerHTML = 'This paragraph is changed'">
+    This is a paragraph</p>
+    <h1>Hello</h1>
+    <button onclick="demo();">Click Me!</button>
+    <button onclick="demo1();">Revert</button>
+<script>
+    function demo(){
+        document.querySelector('h1').innerHTML = "Hy!";
+        document.querySelector('h1').style.color = "red";
+    }
+</script>
+<script src="myjs.js"></script>
+</body>
+</html>

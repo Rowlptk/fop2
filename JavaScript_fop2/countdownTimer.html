@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Count Down Timer</title>
+</head>
+<body onload="setInterval(merotimer, 1);">
+    <h1>Timer</h1>
+
+<!-- 1970 jan 1 ==> 0 -->
+    <script>
+        function merotimer(){
+            var final = new Date(2019, 10, 7, 12, 40, 0, 000);
+            var curr = new Date();
+            var f = final.getTime();
+            var c = curr.getTime();
+            var rem = f - c;
+            if(rem>=0){
+                var day = Math.floor(rem/(24*60*60*1000));
+                rem = rem%(24*60*60*1000);
+                var hr = Math.floor(rem/(60*60*1000));
+                rem = rem%(60*60*1000);
+                var min = Math.floor(rem/(60*1000));
+                rem = rem%(60*1000);
+                var sec = Math.floor(rem/1000);
+                var ms = rem%1000;
+                document.querySelector('h1').innerHTML = 
+                day + " day " + hr + " hours " + min + " minutes " + sec + " seconds " + ms + " milliseconds ";
+            }
+            else{
+                document.querySelector('h1').innerHTML = 'Timeout!';
+            }
+        }
+
+    </script>
+</body>
+</html>

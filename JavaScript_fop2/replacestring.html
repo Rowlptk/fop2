@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>js replace method</title>
+</head>
+<body>
+    <p>This is a paragraph. This paragraph must be changed into statement. This paragraph
+        is a demo PaRagraph for a replace string method.
+    </p>
+
+    <button onclick="mychange();">click to change</button>
+
+    <script>
+        function mychange()
+        {
+            var str = document.querySelector('p').innerHTML;
+            var newstr = str.replace(/paragraph/gi,'statement');
+            document.querySelector('p').innerHTML = newstr;
+        }
+    
+    </script>
+</body>
+</html>
+
+<!-- form validation using regex,  -->

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>List Style</title>
+    <style>
+        ul{
+            list-style-image: url('hellcat_icon.png');
+            list-style-position: inside;
+            text-align: center;
+        }
+        div{
+            border: 20px dashed red;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color:darkgray;
+            overflow: hidden;
+            /* transition-duration: 10s;
+            /* transition-delay: 2s; */
+            /* transition-property: all;
+            transition-timing-function: ease; */
+            transition:all 10s linear 1s;
+            /* linear ease-in ease-out ease-in-out */
+        }
+        div:hover{
+            /* height: 200px;
+            width: 400px; */
+            transform: rotate(1440deg)
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>item number one</li>
+        <li>item number two</li>
+        <li>item number three</li>
+        <li>item number four</li>
+    </ul>
+    <div>
+        <p>Lorem ipsum dolor sit amet, 
+            consectetur adipisicing elit. 
+            Doloremque, veniam accusamus 
+            blanditiis eius officia error 
+            voluptatem maxime incidunt quos 
+            aspernatur tenetur soluta rem exercitationem 
+            voluptate porro, asperiores quasi aperiam eum?
+        </p>
+    </div>
+</body>
+</html>
